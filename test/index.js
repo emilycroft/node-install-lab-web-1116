@@ -11,7 +11,7 @@ describe('node version', function () {
 })
 
 describe('npm version', function () {
-  it('must be 2.14.15 or greater', function(done){
+  it('must be 2.14.15 or greater', function(done){ 
     child = cp.exec('npm -v',
     function (error, stdout, stderr) {
       expect(stderr).to.equal('')
